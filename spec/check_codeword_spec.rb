@@ -10,4 +10,9 @@ RSpec.describe "check_codeword method" do
     result = check_codeword('donkey')
     expect(result).to eq 'WRONG!'
   end
+
+  it "Takes 'h*e' and prints 'Close, but nope.'" do
+    result = check_codeword('hoe')
+    expect(result).to eq "Close, but nope."
+  end
 end
